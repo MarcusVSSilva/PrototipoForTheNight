@@ -1,0 +1,73 @@
+.banner{
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.info_show{
+    width: 900px;
+    height: 160px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 280px;
+    /*border-style: solid;*/
+    border-width: 1px;
+}
+
+.ing_show{
+    width: 1300px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 470px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.qtd{
+    position: absolute;
+    left: 1100px;
+    top: 50px;
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.numero_qtd{
+    width: 50px;
+    height: 39px;
+    position: absolute;
+    left: 1145px;
+    top: 50px;
+}
+
+.btnComprar{
+    position: absolute;
+    left: 1110px;
+    width: 80px;
+    height: 35px;
+}
+
+.janela{
+    width: 320px;
+    height: 285px;
+}
+
+.ipt_ing{
+    border: none;
+    width: 55px;
+}
+
+.ipt_ing:hover{
+    cursor: text;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar ingresso</title>
+    <link rel="stylesheet" href="css/stylecomprar.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+<div class="box-resumo">
+<div class="linha-vertical2"></div>
+<div class="resumo">
+    <h2>RESUMO</h2>
+    <h4>Valor do(s) Ingresso(s): </h4><label class="valor_resumo"></label>
+    <h4>Quantidade:</h4><label class="qtd"></label>
+    <hr>
+    <h4>(Em até <b>5x</b> de <label class="divisao"></label>)</h4>
+</div>
+</div>
+<div class="box-pagamento">
+    <div class="linha-vertical"></div>
+    <h1>Formas de pagamento</h1>
+    <div class="leftside">
+
+        <label class="labelexpanded">
+            <input type="radio" name="targetgroup">
+            <div class="radio-btns">
+                <img src="./images/mastercard-logo.png" alt="logo MasterCard" class="tam">
+            </div>
+        </label>
+
+        <label class="labelexpanded">
+            <input type="radio" name="targetgroup">
+            <div class="radio-btns">
+                <img src="./images/boleto-logo.png" alt="logo boleto bancário" class="tam">
+            </div>
+        </label>
+
+        <label class="labelexpanded">
+            <input type="radio" name="targetgroup">
+            <div class="radio-btns">
+                <img src="./images/visa-logo.png" alt="logo Visa" class="tam">
+            </div>
+        </label>
+
+        <label class="labelexpanded">
+            <input type="radio" name="targetgroup">
+            <div class="radio-btns">
+                <img src="./images/elo-logo.png" alt="logo Elo" class="tam">
+            </div>
+
+            <label class="labelexpanded">
+                <input type="radio" name="targetgroup">
+                <div class="radio-btns">
+                    <img src="./images/pix-logo.png" alt="logo Pix" class="tam">
+                </div>
+            </label>
+        </label>
+    </div>
+    </div>
+    </div>
+    <div class="desconto_pix">
+        <label class="txt_pix">Valor no <b>PIX</b></label>
+        <label class="valor_pix"></label>
+    </div>
+    <input type="text" class="cupom" placeholder="CUPOM DE DESCONTO">
+    <button class="btn_cupom">APLICAR CUPOM</button>
+</div>
+    <script src="js/scriptcomprar.js"></script>
+</body>
+</html>

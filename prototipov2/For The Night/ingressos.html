@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingressos</title>
+    <link rel="stylesheet" href="css/styleing.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <img src="./images/logo.PNG" alt="logo" class="logo">
+        <ul>
+            <li class="topics"><a href="./home.html" class="a-nav">Home</a></li>
+            <li class="topics"><a href="./cardapio.html" class="a-nav">Cardápio</a></li>
+            <li class="topics"><a href="./ingressos.html" class="a-nav active">Ingressos</a></li>
+            <li class="topics"><a href="./contato.html" class="a-nav">Contato</a></li>
+          </ul>
+    </nav>
+    <img src="./images/banner.PNG" alt="banner_show" class="banner">
+    <div class="info_show">
+        <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; margin-top: 20px;">Sidoka e MC Hariel</h2>
+        <img src="./images/calendario_icon.png" alt="ícone calendário" width="50px" style="position: absolute; top: 60px;">
+        <h4 style="margin-top: 16px; margin-left: 50px; color:rgba(0, 0, 0, 0.726); font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Domingo, 21 de Agosto de 2022 - Abertura: 15:00</h4>
+    </div>
+    <div class="ing_show">
+
+        <h3 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 50px; margin-top: 50px;">1º Lote</h3>
+        <h4 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-left: 50px; font-size: 15px; margin-top: 5px; color: rgba(0, 0, 0, 0.600);">a partir de R$<input type="number" readonly class="ipt_ing"></label>+ Taxas</h4>
+        <h5 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-top: 5px; font-size: 12px; margin-left: 50px; color: rgba(0, 0, 0, 0.600);">Pague em até 12x</h5>
+
+        <span class="qtd">Qtd</span>
+        <select name="quantidade" class="numero_qtd" onchange="updateSelect()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <button id="btn_comprar" class="btnComprar">Comprar</button>
+    </div>
+    <script src="js/scripting.js" defer></script>
+</body>
+</html>

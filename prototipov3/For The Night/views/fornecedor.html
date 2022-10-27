@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fornecedor</title>
+</head>
+<link rel="stylesheet" href="../public/css/styleTelas.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mask.min.js"></script>
+<body>
+    <div class="form">
+        <form method="POST">
+            <div class="form-header">
+                <h1>Fornecedor(es)</h1>
+
+                <div class="input-group">
+                    <div class="input-box">  
+                        <label for="id">ID</label>
+                        <input type="number" name="id" id="id" placeholder="(Apenas para exclusão)">
+                    </div>
+
+                    <div class="input-box">  
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" name="cnpj" id="cnpj" placeholder="00.000.000/0000-00">
+                    </div>
+
+                    <div class="input-box">  
+                        <label for="razao_social">Razão Social</label>
+                        <input type="text" name="razao_social" id="razao_social">
+                    </div>
+
+                    <div class="input-box">  
+                        <label for="nome_fantasia">Nome Fantasia</label>
+                        <input type="text" name="nome_fantasia" id="nome_fantasia">
+                    </div>
+
+                    <div class="input-box">  
+                        <label for="cep">CEP</label>
+                        <input type="text" name="cep" id="cep" placeholder="00000-000">
+                    </div>
+
+                    <div class="input-box">  
+                        <label for="estado">Estado</label>
+                        <input type="text" name="estado" id="estado" placeholder="Ex. São Paulo">
+                    </div>
+
+                    <div class="input-box">  
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" placeholder="Ex. São Paulo">
+                    </div>
+
+                    <div class="input-box">  
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro" id="bairro" placeholder="Ex. Jardim Guanabara">
+                    </div>
+
+                    <div class="input-box">  
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" id="rua" placeholder="Ex. Rua Manuel de Azevedo">
+                    </div>
+
+                    <div class="input-box">  
+                        <label for="numero_estabelecimento">Número</label>
+                        <input type="text" name="numero_estabelecimento" id="numero_estabelecimento" placeholder="Ex. 133">
+                    </div>
+
+                    <div class="input-box">  
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="0000-0000">
+                    </div>
+
+                    <div class="input-box">  
+                        <label for="celular">Celular</label>
+                        <input type="tel" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+
+                    <div class="buttons">
+                        <div class="consult-button">
+                            <button type="button">Consultar</button>
+                        </div>
+
+                        <div class="delete-button">
+                            <button type="button">Apagar</button>
+                        </div>
+
+                        <div class="submit-button">
+                            <button type="submit">Inserir</button>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="../js/scriptfornecedor.js"></script>
+</body>
+</html>

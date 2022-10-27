@@ -1,0 +1,302 @@
+body{
+    background-color: rgba(0, 0, 0, 0.048);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.tam{
+    width: 100px;
+}
+
+.leftside{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.labelexpanded > input {
+    display: none;
+}
+
+.labelexpanded input:checked + .radio-btns{
+    border: solid;
+    border-color: rgba(0, 0, 255, 0.322);
+}
+
+.radio-btns {
+    width: 100px;
+    border-radius: 10px;
+    position: relative;
+    padding: 15px 20px;
+    box-shadow: 0 1px #c3c3c3;
+    cursor: pointer;
+    background-color: #eaeaea;
+    float: left;
+    margin-right: 65px;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.box-pagamento{
+    margin-top: 350px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1100px;
+    height: 500px;
+
+}
+
+.linha-vertical {
+    height: 450px;
+    border-left: 5px solid;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    color: rgba(0, 0, 255, 0.500);
+}
+
+.linha-vertical2 {
+    height: 170px;
+    border-left: 5px solid;
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    color: rgba(0, 0, 255, 0.500);
+}
+
+h2{
+    margin-left: 200px;
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+h4{
+    margin-top: 15px;
+    margin-left: 45px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.qtd{
+    position: absolute;
+    top: 108px;
+    left: 122px;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+.valor_resumo{
+    position: absolute;
+    top: 80px;
+    left: 190px;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+hr{
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 40px;
+    
+}
+
+.box-resumo{
+    background-color: #fff;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%);
+}
+
+.cupom{
+    position: absolute;
+    left: 500px;
+    top: 700px;
+    width: 300px;
+    height: 45px;
+    border-radius: 8px;
+    border-color: #0000006c;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.btn_cupom{
+    position: absolute;
+    left: 870px;
+    top: 705px;
+    width: 200px;
+    height: 45px;
+    color: rgba(0, 0, 255, 0.500);
+    font-weight: 700;
+    background-color: #fff;
+    border-color: rgba(0, 0, 255, 0.500);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn_cupom:hover{
+    background-color: rgba(0, 0, 255, 0.500);
+    color: #fff;
+}
+
+.desconto_pix{
+    width: 270px;
+    height: 150px;
+    background-color: #e5fff1;
+    position: absolute;
+    left: 1230px;
+    top: 550px;
+    border-radius: 10px;
+}
+
+.txt_pix{
+    color: #5f9055;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.valor_pix{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #55854b;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.economize_pix{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #55854b;
+}
+
+.carrinho {
+    position: absolute;
+    left: 700px;
+    margin-top: 18px;
+}
+.carrinho_progresso{
+    position: absolute;
+    color: rgba(0, 0, 255, 0.500);
+    left: 700px;
+    top: 65px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.seta1{
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    left: 770px;
+}
+
+.user{
+    width: 55px;
+    position: absolute;
+    left: 850px;
+    top: 18px;
+}
+
+.user_progresso{
+    position: absolute;
+    color: #dee0e4;
+    left: 838px;
+    top: 65px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.seta2{
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    left: 930px;
+}
+
+.pagamento{
+    width: 70px;
+    position: absolute;
+    left: 1010px;
+    top: 20px;
+}
+
+.pagamento_progresso{
+    position: absolute;
+    color: #dee0e4;
+    left: 1010px;
+    top: 65px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.seta3{
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    left: 1100px;
+}
+
+.concluido{
+    width: 85px;
+    position: absolute;
+    left: 1170px;
+    top: 14px;
+}
+
+.concluido_progresso{
+    position: absolute;
+    color: #dee0e4;
+    left: 1180px;
+    top: 65px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#cancelar{
+    position: absolute;
+    top: 900px;
+    left: 580px;
+    width: 200px;
+    height: 40px;
+    color: rgba(255, 0, 0, 0.973);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    border-color: rgba(255, 0, 0, 0.973);
+    background-color: #fff;
+}
+
+#cancelar:hover{
+    cursor: pointer;
+}
+
+#prox{
+    position: absolute;
+    top: 900px;
+    left: 1280px;
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    background-color: rgba(0, 0, 255, 0.500);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+    border-color: rgba(0, 0, 255, 0.500);
+}
+
+#prox:hover{
+    cursor: pointer;
+}

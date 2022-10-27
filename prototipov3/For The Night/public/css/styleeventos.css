@@ -1,0 +1,58 @@
+.eventos{
+    position: absolute;
+    width: 60vw;
+    height: 30vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-evento{
+    position: relative;
+    display: inline-block;
+    width: 12vw;
+    height: 28vh;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.show1{
+    height: 100%;
+    width: 100%;
+}
+
+.show2{
+    height: 100%;
+    width: 100%;
+}
+
+.show3{
+    height: 100%;
+    width: 100%;
+}
+
+h4{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+h5{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+h6{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 1.2vw;
+    margin-top: 0.5vh;
+    font-size: 0.8rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}

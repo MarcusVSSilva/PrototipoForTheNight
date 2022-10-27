@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Inter', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, #182747, #C689C6, #FFABE1, #4C0033);
+    background-size: 300% 300%;
+    animation: colors 45s ease infinite;
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.show-container{
+    display: flex;
+    width: 60vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: color;
+}
+
+.show-container .show-image .image {
+    height: 10rem;
+    width: auto;
+}
+
+.show-container .show-content {
+    width: 60vw;
+    height: auto;
+}
+
+.show-container .show-content h6{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 2.5rem;
+    justify-content: center;
+    letter-spacing: 0.2rem;
+}
+.show-container .show-content .calendar-icon{
+    height: 40px;
+    width: auto;
+}
+
+.show-container .show-content p{
+    display: inline-flex;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.show-container:hover{
+    border-style:outset;
+    border-color: #fff;
+    border-width: 2px;
+    transition: all 250ms ease;
+}

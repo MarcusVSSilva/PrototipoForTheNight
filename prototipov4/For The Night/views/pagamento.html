@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="../public/css/stylePagamento.css">
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <i class="las la-shopping-cart active"></i>
+        <i class="las la-long-arrow-alt-right active"></i>
+        <i class="las la-user active"></i>
+        <i class="las la-long-arrow-alt-right active"></i>
+        <i class="lar la-credit-card active"></i>
+        <i class="las la-long-arrow-alt-right disabled"></i>
+        <i class="las la-check-circle disabled"></i>
+    </div>
+    <!-- Payment Methods -->
+    <div class="payment-methods">
+        <div class="title">
+            <h1>Escolha a forma de Pagamento</h1>
+        </div>
+        <div class="payment-methods-container">
+            <div class="radio-buttons">
+                <label class="custom-radio">
+                    <input type="radio" name="radio" value="Mastercard" id="mastercard">
+                    <span class="radio-btn"><i class="las la-check"></i>
+                        <div class="payment-icons">
+                            <i class="lab la-cc-mastercard"></i>
+                            <h3>Mastercard</h3>
+                        </div>
+                    </span>
+                </label>
+
+                <label class="custom-radio">
+                    <input type="radio" name="radio" value="Visa" id="visa">
+                    <span class="radio-btn"><i class="las la-check"></i>
+                        <div class="payment-icons">
+                            <i class="lab la-cc-visa"></i>
+                            <h3>Visa</h3>
+                        </div>
+                    </span>
+                </label>
+
+                <label class="custom-radio">
+                    <input type="radio" name="radio" value="Boleto" id="boleto">
+                    <span class="radio-btn"><i class="las la-check"></i>
+                        <div class="payment-icons">
+                            <i class="las la-barcode"></i>
+                            <h3>Boleto</h3>
+                        </div>
+                    </span>
+                </label>
+
+                <label class="custom-radio">
+                    <input type="radio" name="radio" value="Pix" id="pix" checked>
+                    <span class="radio-btn"><i class="las la-check"></i>
+                        <div class="payment-icons">
+                            <i class="las la-money-bill-wave-alt"></i>
+                            <h3>Pix</h3>
+                        </div>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- Payment Data -->
+    <div class="payment-data inactive">
+        <div class="input-group">
+            <div class="input-box">
+                
+                <label for="numero_cartao">Número do cartão</label>
+                <input type="text" id="numero_cartao" name="numero_cartao" placeholder="0000 0000 0000 0000" required>
+            </div>
+
+            <div class="input-box">
+                <label for="firstname">Nome</label>
+                <input type="text" id="firstname" name="nome" placeholder="Digite seu nome" required>
+            </div>
+        </div>
+    </div>
+    <script src="../js/scriptPagamento.js" defer></script>
+</body>
+</html>

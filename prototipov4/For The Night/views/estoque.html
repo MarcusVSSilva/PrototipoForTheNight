@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="../public/css/styleestoque.css">
+</head>
+<body>
+    <form method="POST">
+        <div class="box-estoque">
+            <h1>Estoque</h1>
+            <label>id:</label>
+            <input type="number" name="id_produto" class="id_produto">
+            <br>
+            <br>
+            <label>Nome produto:</label>
+            <input type="text" name="nome_produto" maxlength="20" class="nome_produto">
+            <br>
+            <br>
+            <label>Quantidade:</label>
+            <input type="number" name="qtd_produto" class="qtd_produto">
+            <label class="unidades">(unidades)</label>
+            <br>
+            <br>
+            <label>Data de entrada:</label>
+            <input type="date" name="data_entrada">
+            <br>
+            <br>
+            <label>Categoria:</label>
+            <input type="text" name="categoria">
+            <br>
+            <br>
+            <label>Valor de compra:</label>
+            <input type="text" name="valor_compra">
+            <br>
+            <br>
+            <button type="submit">Inserir</button>
+            <button type="button" id="delete" name="delete">Apagar</button>
+        </div>
+    </form>
+</body>
+</html>

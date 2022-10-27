@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    /* background: linear-gradient(90deg, #182747, #C689C6, #FFABE1, #4C0033);
+    background-size: 300% 300%;
+    animation: colors 45s ease infinite; */
+}
+
+.payment-methods .title h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.payment-methods .payment-methods-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.payment-methods .payment-methods-container .radio-buttons {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.payment-methods .payment-methods-container .radio-buttons .custom-radio input {
+    display: none;
+}
+
+.payment-methods .payment-methods-container .radio-buttons .custom-radio .radio-btn {
+    margin: 10px;
+    width: 180px;
+    height: 200px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+}
+
+.payment-methods .payment-methods-container .radio-buttons .custom-radio .radio-btn > i {
+    color: #ffffff;
+    background-color: #2196f3;
+    font-size: 1.25rem;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: .2s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.payment-methods .payment-methods-container .radio-buttons .custom-radio .radio-btn .payment-icons {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.payment-methods .payment-methods-container .radio-buttons .custom-radio .radio-btn .payment-icons i {
+    color: #2196f3;
+    line-height: 80px;
+    font-size: 3.75rem;
+}
+
+.payment-methods .payment-methods-container .radio-buttons .custom-radio .radio-btn .payment-icons h3 {
+    color: #2196f3;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.payment-methods .payment-methods-container .radio-buttons .custom-radio input:checked + .radio-btn {
+    border: 3px solid #2196f3;
+}
+
+.payment-methods .payment-methods-container .radio-buttons .custom-radio input:checked + .radio-btn > i {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.progress-bar {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    font-size: 4rem;
+}
+
+.active {
+    color: #2196f3;
+}
+
+.disabled {
+    color: #c3c3c391;
+}
+
+.inactive{
+    display: none;
+}
+
+.payment-data {
+    justify-content: center;
+    align-items: center;
+}

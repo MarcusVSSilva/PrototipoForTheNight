@@ -1,0 +1,34 @@
+.div-feedback{
+    width: 700px;
+    height: 750px;
+    border-style: solid;
+    border-radius: 30px;
+    position: absolute;
+    padding: 30px;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -80%);
+    border-color: white;
+}
+
+.nome{
+    border-style: solid;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-color: white;
+}
+
+.coments{
+    position: absolute;
+    bottom: 500px;
+    width: 300px;
+    left: 300px;
+}
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+}

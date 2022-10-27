@@ -1,0 +1,78 @@
+body{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+}
+
+.ask{
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, 0.884);
+    width: 800px;
+    height: 440px;
+    border-style: outset;
+    border-color: rgb(0, 0, 0);
+}
+
+.sac{
+    color: black;
+}
+
+.sac:hover{
+    color: black;
+}
+
+.chat{
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    margin-left: 1500px;
+    bottom: 0px;
+    position: sticky;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.user{
+    border-radius: 30px 30px 0 0 ;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+.fechar:hover{
+    cursor: pointer;
+}
+
+.aten{
+    margin-left: 10px;
+    margin-top: 3px;
+    width: 80px;
+    height: 80px;
+}
+
+.typing{
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.digitar{
+    position: absolute;
+    border-radius: 0 0 30px 30px;
+    top: 535px;
+    width: 100%;
+    height: 65px;
+    background-color: black;
+}
+
+.seta{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+.seta:hover{
+    cursor: pointer;
+}

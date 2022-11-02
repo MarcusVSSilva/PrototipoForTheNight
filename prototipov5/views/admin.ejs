@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styleAdmin.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+</head>
+
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i class='bx bxl-redux' undefined></i>
+            <span class="logo_name">Fest-S</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="http://localhost:3000/admin">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Início</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="http://localhost:3000/admin">Início</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-collection'></i>
+                        <span class="link_name">Cadastro</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Cadastro</a></li>
+                    <li><a href="http://localhost:3000/fornecedores">Fornecedores</a></li>
+                    <li><a href="http://localhost:3000/estoque">Produtos</a></li>
+                    <li><a href="http://localhost:3000/evento">Eventos</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-dollar-circle'></i>
+                    <span class="link_name">Vendas</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Venda - Ingressos</a></li>
+                    <li><a href="http://localhost:3000/bilheteria">Bilheteria</a></li>
+                    <li><a class="link_name" href="#">Venda - Estoque</a></li>
+                    <li><a href="http://localhost:3000/produtos">Produtos</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-bar-chart-alt-2'></i>
+                    <span class="link_name">Movimentação</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Movimentação</a></li>
+                    <li><a href="http://localhost:3000/estacionamento">Estacionamento</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="images/user-solid-48.png" alt="profileImg">
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">usuário</div>
+                    </div>
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text">Menu</span>
+        </div>
+        <div class="content">
+            <div class="exit-button">
+                <a href="http://localhost:3000/inicio">
+                    <i class="las la-times"></i>
+                    <label>Sair</label>
+                </a>
+            </div>
+            <div class="title">
+                <h1>Bem-vindo, admin!</h1>
+            </div>
+            <div class="button-group">
+                <div class="button">
+                    <a href="http://localhost:3000/fornecedores" class="btn_cadastro">
+                        <i class='bx bx-collection'></i>
+                        <label>Cadastro</label>
+                    </a>
+                </div>
+
+                <div class="button">
+                    <a href="http://localhost:3000/bilheteria" class="btn_venda">
+                        <i class='bx bx-dollar-circle'></i>
+                        <label>Venda</label>
+                    </a>
+                </div>
+
+                <div class="button">
+                    <a href="http://localhost:3000/estacionamento" class="btn_mov">
+                        <i class='bx bx-bar-chart-alt-2'></i>
+                        <label>Movimentação</label>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
+
+</html>

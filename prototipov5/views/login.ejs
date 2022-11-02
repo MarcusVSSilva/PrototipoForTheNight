@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="/js/jquery.min.js"></script>
+</head>
+<body>
+     <!-- Navbar -->
+     <navbar id="navbar">
+        <div class="navbar-container">
+            <img src="images/saude.png" alt="logo For the Night" class="logo">
+            <ul class="navbar-items">
+                <li class="navbar-item"><a href="http://localhost:3000/inicio">Início</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/eventos">Eventos</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/contato">Contato</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/cadastro">Cadastre-se</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/login">Entrar</a></li>
+            </ul>
+        </div>
+    </navbar>
+    <div class="container">
+        <div class="form-image">
+            <img src="images/undraw_join_re_w1lh.svg" alt="login">
+        </div>
+        <div class="form">
+            <form method="POST">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Entre</h1>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-button">
+                    <button type="submit" id="btn_entrar">Entrar</button>
+                </div>
+            </form>
+            <h6 class="cadastrar">Ainda não possui uma conta? <a href="http://localhost:3000/cadastro">Cadastre-se</a></h6>
+        </div>
+    </div>
+    <script src="/js/scriptLogin.js"></script>
+</body>
+</html>

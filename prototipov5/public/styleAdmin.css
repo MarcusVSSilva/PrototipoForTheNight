@@ -1,0 +1,63 @@
+.content .title h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.content .exit-button {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin: 30px 90px;
+    cursor: pointer;
+}
+
+.content .exit-button a {
+    text-decoration: none;
+}
+
+.content .exit-button label {
+    cursor: pointer;
+}
+
+.content .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.content .button-group .button a{
+    padding: 60px 80px;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.content .button-group .button .btn_cadastro {
+    background-color: #2596be;
+}
+
+.content .button-group .button .btn_venda {
+    background-color: #B7ce03;
+}
+
+.content .button-group .button .btn_mov {
+    background-color: #Bf1416;
+}
+
+.content .button-group .button i {
+    font-size: 5rem;
+    color: #fff;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .button-group .button label {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+} 

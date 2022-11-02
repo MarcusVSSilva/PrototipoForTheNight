@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleestoque.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+</head>
+
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i class='bx bxl-redux' undefined></i>
+            <span class="logo_name">Fest-S</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="http://localhost:3000/admin">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Início</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="http://localhost:3000/admin">Início</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-collection'></i>
+                        <span class="link_name">Cadastro</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Cadastro</a></li>
+                    <li><a href="http://localhost:3000/fornecedores">Fornecedores</a></li>
+                    <li><a href="http://localhost:3000/estoque">Produtos</a></li>
+                    <li><a href="http://localhost:3000/evento">Eventos</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-dollar-circle'></i>
+                    <span class="link_name">Vendas</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Venda - Ingressos</a></li>
+                    <li><a href="http://localhost:3000/bilheteria">Bilheteria</a></li>
+                    <li><a class="link_name" href="#">Venda - Estoque</a></li>
+                    <li><a href="http://localhost:3000/produtos">Produtos</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-bar-chart-alt-2'></i>
+                    <span class="link_name">Movimentação</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Movimentação</a></li>
+                    <li><a href="http://localhost:3000/estacionamento">Estacionamento</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="images/user-solid-48.png" alt="profileImg">
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">usuário</div>
+                    </div>
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text">Menu</span>
+        </div>
+
+        <div class="form-container">
+            <div class="form-content">
+                <form method="POST">
+                    <div class="form-header">
+                        <h1>Cadastro de Produto</h1>
+                    </div>
+                    <div class="inputs">
+                        <div class="input-group">
+                            <label>Nome produto:</label>
+                            <input type="text" name="nome_produto" maxlength="" class="nome_produto">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Quantidade:</label>
+                            <input type="number" name="qtd_produto" class="qtd_produto">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="unidade_medida">Unidade de medida:</label>
+                            <select name="unidade_medida" id="unidade_medida">
+                                <optgroup label="Massa">
+                                    <option value="mg">miligrama(s)</option>
+                                    <option value="g">grama(s)</option>
+                                    <option value="kg">Quilograma(s)</option>
+                                </optgroup>
+
+                                <optgroup label="Capacidade">
+                                    <option value="ml">mililitro(s)</option>
+                                    <option value="l" selected>litro(s)</option>
+                                </optgroup>
+                                <optgroup label="Unidade">
+                                    <option value="unidade(s)">unidade(s)</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="categoria">Categoria:</label>
+                            <select name="categoria" id="categoria">
+                                <optgroup label="Líquidos">
+                                    <option value="Óleos e gorduras">Óleos e gorduras</option>
+                                    <option value="Água">Água</option>
+                                    <option value="Água" selected>Bebidas alcoólicas</option>
+                                    <option value="Leite e derivados">Leite e derivados</option>
+                                </optgroup>
+
+                                <optgroup label="Sólidos">
+                                    <option value="Açúcares e doces">Açúcares e doces</option>
+                                    <option value="Sais">Sais</option>
+                                    <option value="Massa">Massa</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Valor Unitário:</label>
+                            <input type="text" name="valor_compra">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="reset" id="cancelar">Limpar</button>
+                        <button type="submit">Inserir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="tabela">
+            <div class="tabela-header">
+                <h1>Lista de produtos</h1>
+            </div>
+            <table class="">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Unidade</th>
+                        <th>valor de compra</th>
+                        <th>Categoria</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <% data.forEach(entry=> { %>
+                        <tr>
+                            <td>
+                                <%= entry.nome %>
+                            </td>
+                            <td>
+                                <%= entry.quantidade %>
+                            </td>
+                            <td>
+                                <%= entry.unidade_medida %>
+                            </td>
+                            <td>
+                                R$<%= entry.valor_compra %>
+                            </td>
+                            <td>
+                                <%= entry.categoria %>
+                            </td>
+                            <td>
+                                <a href="">
+                                    <i class='bx bxs-trash'></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <% }) %>
+
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+
+
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
+
+</html>

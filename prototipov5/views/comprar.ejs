@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+    <link rel="stylesheet" href="stylecomprar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+</head>
+<body>
+    <!-- Navbar -->
+    <navbar id="navbar">
+        <div class="navbar-container">
+            <img src="images/saude.png" alt="logo For the Night" class="logo">
+            <ul class="navbar-items">
+                <li class="navbar-item"><a href="http://localhost:3000/inicio">Início</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/eventos">Eventos</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/contato">Contato</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/cadastro">Cadastre-se</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/login">Entrar</a></li>
+            </ul>
+        </div>
+    </navbar>
+    <!-- Formulário -->
+    <div class="form-container">
+        <div class="form-content">
+            <form method="POST" action="?_method=PUT">
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <label for="email">Digite seu email</label>
+                        <input type="text" name="email" id="email" required >
+                    </div>
+
+                <div class="buttons">
+                    <div class="submit-button">
+                        <input type="hidden" name="_method" value="PUT">
+                        <button type="submit">Comprar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="js/scriptcomprar.js"></script>
+</body>
+</html>

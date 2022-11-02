@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="styleing.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- Navbar -->
+    <navbar id="navbar">
+        <div class="navbar-container">
+            <img src="images/saude.png" alt="logo For the Night" class="logo">
+            <ul class="navbar-items">
+                <li class="navbar-item"><a href="http://localhost:3000/inicio">Início</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/eventos">Eventos</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/contato">Contato</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/cadastro">Cadastre-se</a></li>
+                <li class="navbar-item"><a href="http://localhost:3000/login">Entrar</a></li>
+            </ul>
+        </div>
+    </navbar>
+    <!-- card -->
+    <% data.forEach(entry=> { %>
+        <div class="card">
+            <div class="img-card">
+                <img src="/public/images/ticket.png" alt="Ticket">
+            </div>
+            <div class="card-content">
+                <h6 style="display: none" id="id_evento"><%= entry.id_eventos %></h6>
+                <h3><%= entry.nome %></h3>
+                <h3>Ingresso</h3>
+                <h1>Individual</h1>
+                <h2 class="price"><small>R$</small><big><%= entry.valor_ingresso.toFixed(2) %></big></h2>
+                <a id="btn_comprar" class="buy" style="cursor: pointer;" href="http://localhost:3000/comprar">Compre Agora</a>
+                <h5><%= entry.valor_ingresso %> ingressos restantes</h5>
+                <h4>Lote <%= entry.lote %></h4>
+            </div>
+        </div>
+        <% }) %>
+    
+    <script src="js/scripteventos.js" defer></script>
+</body>
+</html>
